@@ -1,0 +1,17 @@
+①“explore.exe可以用来打开html文件”
+
+②# include snippets/snakeoil.conf;
+root /home/ecs-user/Zero-to-tech;
+        
+# Add index.php to the list if you are using PHP        
+index index.html index.htm index.nginx-debian.html;
+
+server_name _;
+#Server_name指代域名，当主机通过该特定域名访问时，nginx通过本Server块下定义的root来访问对应网页文件夹中的html文件；
+#这样可以实现通过不同域名来访问同一IP(服务器公网IP)中配置的不同网页，高效利用服务器资源。
+#这里的_代表通配符，即任意域名都被导向我的index.html网页。
+ location / {
+	# First attempt to serve request as file, then
+	# as directory, then fall back to displaying a 404.                
+	try_files $uri $uri/ =404;
+}
