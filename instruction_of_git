@@ -1,2 +1,0 @@
-“初始化：首先利用git init创建git文件来将本文件夹纳入git管理；随后通过git remote add repo_name repository地址(https或SSH)来完成本地git仓库与云端git仓库的链接”
-“git管理本地文件以及每一次修改：①git status查看当前缓冲区状态 ②git add .当前文件夹下全部内容.如果有不想被管理的，写到.gitignore里面 ③git commit将缓冲区文件正式提交，-m参数允许你将本次修改的说明文字一同添加进去”
