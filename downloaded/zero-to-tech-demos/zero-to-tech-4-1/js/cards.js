@@ -11,7 +11,7 @@
 */
 //改写后的代码;- 顶上 `import`：明文声明"我要用 anime.js 里的 `animate` 和 `stagger`"（注意网址末尾的 `+esm`，这是 anime.js 的 **ES 模块版本**）。
 //- `export`：把这个函数对外开放，让别的文件能 import 它。?
-import { animate, stagger } from "https://cdn.jsdelivr.net/npm/animejs@4/+esm";
+import { animate, stagger } from "animejs";
 
 export function initCardsAnim() {
   animate(".card", {

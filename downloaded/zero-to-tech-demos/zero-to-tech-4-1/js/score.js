@@ -22,7 +22,7 @@
 //新代码：原来 `setInterval` 手写的数字滚动，换成了 anime.js 的 `scrambleText` 特效（这个特效只在 ES 模块版本里才有）。
 // `scrambleText({ chars: "0-9" })` 里的 `chars: "0-9"`——它告诉 scrambleText**滚动时只用数字 0~9**。不加这个参数的话，它默认会用字母、符号一起洗，分数滚动过程中就会闪过一堆字母，不像在"算数字"。
 
-import { animate, scrambleText } from "https://cdn.jsdelivr.net/npm/animejs@4/+esm";
+import { animate, scrambleText } from "animejs";
 
 export function initScoreAnim() {
   var btn = document.querySelector(".primary-button");
