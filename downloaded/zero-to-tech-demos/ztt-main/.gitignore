@@ -2,3 +2,4 @@ node_modules/
 dist/
 *.local
 zero-to-tech-demos/
+.gitignore
